@@ -37,11 +37,16 @@ class LinearCongruence {
         this.increment = Math.floor(increment);
     }
 
+    random() {
+        let current = this.n;
+        this.n = (this.multiplier * this.n + this.increment) %
+                 this.modulus;
+        return current;
+    }
+
     *generator() {
         for (;;) {
-            yield this.n;
-            this.n = (this.multiplier * this.n + this.increment) %
-                     this.modulus;
+            yield this.random();
         }
     }
 }
