@@ -1,0 +1,25 @@
+{
+  "name": "twist-of-fate-js",
+  "version": "1.0.0",
+  "description": "Randomness",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register tests/rng/*.js",
+    "build": "webpack index.js dist/twist-of-fate.js"
+  },
+  "keywords": [
+    "random",
+    "rng"
+  ],
+  "author": "Panos Kountanis",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-polyfill": "^6.0.0",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "webpack": "^1.12.11"
+  }
+}
