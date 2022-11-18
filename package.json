@@ -1,11 +1,11 @@
 {
   "name": "twist-of-fate-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randomness",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register tests/rng/*.js",
-    "build": "webpack index.js dist/twist-of-fate.js"
+    "build": "webpack"
   },
   "keywords": [
     "random",
